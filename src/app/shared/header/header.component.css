@@ -6,7 +6,7 @@ header {
 .header {
     max-width: 1364px;
     width: 100%;
-    padding: 6.5rem 0;
+    padding: 6.5rem 1rem;
 }
 
 .header-logo {
@@ -20,6 +20,7 @@ header {
 .header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav__list {
@@ -29,6 +30,8 @@ header {
 
 .header-nav__item {
     cursor: pointer;
+    white-space: nowrap;
+    
     font-family: 'Open Sans', sans-serif;
     color: #2F2F2F;
     font-size: 1rem;
