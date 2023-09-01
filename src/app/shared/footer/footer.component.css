@@ -1,6 +1,7 @@
 footer {
     display: flex;
     justify-content: center;
+    background-color: #3C3C3B;
 }
 
 .footer {
@@ -9,7 +10,50 @@ footer {
     padding: 10rem 1rem;
 }
 
+.footer > * {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #FAFAFA;
+    letter-spacing: 0.05em;
+}
+
+.footer strong {
+    font-weight: 700;
+}
+
 .footer-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 5% 5%; 
+    grid-template-areas: 
+        "logo nav info social"
+        ". . vcard creditos";
+}
+
+.footer-logo {
+    cursor: pointer;
+
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-nav__list, 
+.footer-info__list, 
+.footer-social__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-grid__vcard {
+    grid-area: vcard;
+}
+
+.footer-grid__creditos {
+    grid-area: creditos;
+}
+
+.footer-minusculo {
+    text-transform: none;
 }
