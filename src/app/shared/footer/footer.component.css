@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    max-width: 1364px;
+    width: 100%;
+    padding: 10rem 1rem;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

@@ -42,12 +42,29 @@ header {
     text-transform: uppercase;
 }
 
-.header-nav__item:hover {
-    border-bottom: 2px solid #CCCCCC;
-    margin-bottom: -2px;
-}
-
 .activelink {
     border-bottom: 2px solid black;
     margin-bottom: -2px;
+}
+
+.underline-effect {
+    display: inline-block;
+    position: relative;
+}
+  
+.underline-effect:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #AAAAAA;
+    transition: width 300ms;
+
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+  
+.underline-effect:hover:after {
+    width: 100%;
 }
