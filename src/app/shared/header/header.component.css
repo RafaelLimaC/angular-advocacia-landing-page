@@ -10,6 +10,8 @@ header {
 }
 
 .header-logo {
+    cursor: pointer;
+
     font-family: 'Open Sans', sans-serif;
     color: black;
     font-size: 2rem;
@@ -36,5 +38,16 @@ header {
     color: #2F2F2F;
     font-size: 1rem;
     font-weight: 700;
+    line-height: 1.6;
     text-transform: uppercase;
+}
+
+.header-nav__item:hover {
+    border-bottom: 2px solid #CCCCCC;
+    margin-bottom: -2px;
+}
+
+.activelink {
+    border-bottom: 2px solid black;
+    margin-bottom: -2px;
 }
