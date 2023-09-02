@@ -13,6 +13,7 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ContatoPageComponent } from './pages/contato-page/contato-page.component';
 import { ContatoFormComponent } from './shared/contato-form/contato-form.component';
 import { MatIconModule } from '@angular/material/icon';
+import { BotaoCtaComponent } from './shared/botao-cta/botao-cta.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     ProbonoPageComponent,
     BlogPageComponent,
     ContatoPageComponent,
-    ContatoFormComponent
+    ContatoFormComponent,
+    BotaoCtaComponent
   ],
   imports: [
     BrowserModule,
