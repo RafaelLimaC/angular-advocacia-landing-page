@@ -7,9 +7,26 @@
 .home-cta {
     display: flex;
     max-width: 1364px;
-    padding: 0 1rem;
+    padding: 7.5rem 1rem;
+    flex-direction: column;
 
     margin-inline: auto;
+}
+
+.home-cta__texto {
+    padding-bottom: 6rem;
+    width: 140ch;
+}
+
+.home-cta__texto h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+}
+
+.home-cta__texto strong {
+    font-weight: 700;
 }
 
 .home-cta__botoes {
