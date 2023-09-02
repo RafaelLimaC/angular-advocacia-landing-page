@@ -12,6 +12,7 @@ import { ProbonoPageComponent } from './pages/probono-page/probono-page.componen
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ContatoPageComponent } from './pages/contato-page/contato-page.component';
 import { ContatoFormComponent } from './shared/contato-form/contato-form.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContatoFormComponent } from './shared/contato-form/contato-form.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
