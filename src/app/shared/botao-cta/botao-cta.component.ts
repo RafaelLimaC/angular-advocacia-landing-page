@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class BotaoCtaComponent {
   @Input() label: string = '';
+  @Input() router: string = '';
 }

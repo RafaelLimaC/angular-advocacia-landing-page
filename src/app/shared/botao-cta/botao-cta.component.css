@@ -1,7 +1,6 @@
 .btn-cta {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 
     background-color: transparent;
     color: #3C3C3B;
@@ -11,24 +10,24 @@
     letter-spacing: 0.06em;
     font-size: 1.5rem;
 
-    padding: 0.75rem 1.25rem;
+    padding: 0.7rem 1.35rem;
+    cursor: pointer;
 }
 
 .btn-cta mat-icon {
-    display: none;
+    display: inline;
     left: 0;
     top: 0;
-    font-size: 40px;
+    font-size: 1px;
     height: 28px;
     transform: translateY(-20%);
     width: fit-content;
     opacity: 0;
-    transition: opacity 0.3s linear;
-    transition: width 0.3s linear;
+    transition: font-size 0.15s linear, opacity 0.25s ease-in-out 0.15s;
 }
 
 .btn-cta:hover mat-icon {
     opacity: 1;
-    display: inline;
-    transition-delay: 0.1s;
+    font-size: 40px;
+    padding-right: 0.5rem;
 }
