@@ -24,7 +24,7 @@ footer {
 .footer-wrapper {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    gap: 5% 5%; 
+    gap: max(5%, 1rem); 
     grid-template-areas: 
         "logo nav info social"
         ". . vcard creditos";

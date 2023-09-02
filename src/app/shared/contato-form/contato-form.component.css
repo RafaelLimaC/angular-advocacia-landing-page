@@ -1,0 +1,65 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: #FAFAFA;
+    padding: 7rem 0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-container h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 3.5rem;
+    padding-bottom: 7rem;
+    text-transform: none;
+    font-weight: 700;
+}
+
+.form-contato {
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-field-holder {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.form-field-holder input {
+    border: 0;
+    border-top: 1px solid #3C3C3B;
+    outline: none;
+    padding-top: 1rem;
+    background-color: transparent;
+}
+
+.form-field-holder label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #3C3C3B;
+
+    transition: font-size 0.3s ease-in-out;
+}
+
+.form-field-holder input, .form-field-holder label {
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: 2;
+}
+
+.form-field-holder input:focus + label,
+.form-field-holder input:valid + label {
+    color: #34E66B;
+    font-size: 0.75rem;
+    position: none;
+}
+
+.form-field-holder input:focus,
+.form-field-holder input:valid {
+    border-top: 1px solid #34E66B;
+}

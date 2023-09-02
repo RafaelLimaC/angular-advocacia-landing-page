@@ -11,6 +11,7 @@ import { AtuacaoPageComponent } from './pages/atuacao-page/atuacao-page.componen
 import { ProbonoPageComponent } from './pages/probono-page/probono-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ContatoPageComponent } from './pages/contato-page/contato-page.component';
+import { ContatoFormComponent } from './shared/contato-form/contato-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContatoPageComponent } from './pages/contato-page/contato-page.componen
     AtuacaoPageComponent,
     ProbonoPageComponent,
     BlogPageComponent,
-    ContatoPageComponent
+    ContatoPageComponent,
+    ContatoFormComponent
   ],
   imports: [
     BrowserModule,
