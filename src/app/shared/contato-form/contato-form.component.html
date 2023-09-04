@@ -1,5 +1,15 @@
 <div class="form-container">
-    <h2>Contato</h2>
+    <div *ngIf="versaoEspecial == false">
+        <h2>Contato</h2>
+    </div>
+    <div *ngIf="versaoEspecial == true">
+        <h2 class="form-h1__alternativo">Contato</h2>
+        <div class="form-info__alternativo">
+            <span>(11) 99999-0000</span>
+            <span>contato@brenofirmino.com</span>
+        </div>
+    </div>
+    
     <form class="form-contato">
         <div class="form-field-holder">
             <input type="text" id="nome" required>

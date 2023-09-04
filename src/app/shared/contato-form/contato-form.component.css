@@ -107,3 +107,29 @@
     transform: translateX(-40%);
     transition: transform 0.3s ease-in-out;
 }
+
+/* -- classes ngif -- */
+.form-h1__alternativo {
+    font-family: 'PT Serif', serif;
+    font-size: 4.5rem;
+    padding-bottom: 5.5rem;
+    text-transform: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-info__alternativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding-bottom: 6rem;
+}
+
+.form-info__alternativo span {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    text-transform: none;
+}

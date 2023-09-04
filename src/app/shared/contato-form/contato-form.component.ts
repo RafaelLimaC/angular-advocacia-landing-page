@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contato-form',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contato-form.component.css']
 })
 export class ContatoFormComponent {
-
+  @Input() versaoEspecial: boolean = false;
 }
