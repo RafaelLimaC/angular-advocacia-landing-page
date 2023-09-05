@@ -4,7 +4,9 @@
       <div (click)="goToNext()" class="rightArrow">❱</div>
     </div>
     <div class="slide">
-      <p>{{ getCurrentSliderContent() }}</p>
+      <p class="slide-content">{{ getCurrentSliderContent() }}</p>
+      <span class="slide-autoria">{{ getCurrentSliderAutor() }}</span>
+      <span class="slide-empresa">{{ getCurrentSliderEmpresa() }}</span>
     </div>
     <div class="dotsContainer">
       <div *ngFor="let slide of slides; let slideIndex = index" class="dot" (click)="goToSlide(slideIndex)" [ngClass]="{ 'activeDot': slideIndex === activeDotIndex }">

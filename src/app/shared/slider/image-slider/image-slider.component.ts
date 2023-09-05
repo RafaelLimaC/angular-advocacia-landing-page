@@ -33,7 +33,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     if (this.timeoutId) {
       window.clearTimeout(this.timeoutId);
     }
-    this.timeoutId = window.setTimeout(() => this.goToNext(), 3000);
+    this.timeoutId = window.setTimeout(() => this.goToNext(), 5000);
   }
 
   goToPrevious(): void {
@@ -64,6 +64,14 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
   getCurrentSliderContent() {
     return `${this.slides[this.currentIndex].content}`
+  }
+
+  getCurrentSliderAutor() {
+    return `${this.slides[this.currentIndex].autor}`
+  }
+
+  getCurrentSliderEmpresa() {
+    return `${this.slides[this.currentIndex].empresa}`
   }
 
   updateActiveDotIndex() {
