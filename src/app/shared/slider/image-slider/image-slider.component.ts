@@ -19,13 +19,16 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
   currentIndex: number = 0;
   timeoutId?: number;
+  activeDotIndex: number = 0;
 
   ngOnInit(): void {
     this.resetTimer();
   }
+  
   ngOnDestroy() {
     window.clearTimeout(this.timeoutId);
   }
+
   resetTimer() {
     if (this.timeoutId) {
       window.clearTimeout(this.timeoutId);
@@ -41,6 +44,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     this.resetTimer();
     this.currentIndex = newIndex;
+    this.updateActiveDotIndex()
   }
 
   goToNext(): void {
@@ -49,14 +53,20 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     this.resetTimer();
     this.currentIndex = newIndex;
+    this.updateActiveDotIndex()
   }
 
   goToSlide(slideIndex: number): void {
     this.resetTimer();
     this.currentIndex = slideIndex;
+    this.updateActiveDotIndex()
   }
 
-  getCurrentSlideUrl() {
-    return `url('${this.slides[this.currentIndex].url}')`;
+  getCurrentSliderContent() {
+    return `${this.slides[this.currentIndex].content}`
+  }
+
+  updateActiveDotIndex() {
+    this.activeDotIndex = this.currentIndex;
   }
 }
