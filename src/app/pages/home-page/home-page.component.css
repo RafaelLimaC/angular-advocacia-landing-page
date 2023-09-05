@@ -59,7 +59,7 @@
     font-size: 3.25rem;
     font-family: 'PT Serif', serif;
 
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 .blog-container {
@@ -76,5 +76,7 @@
 
 .home-contato__img {
     background: url(../../../assets/images/home-man-notes.png);
-    background-size: cover;
+    background-size: auto 130%;
+    background-position: 50% 40%;
+
 }
