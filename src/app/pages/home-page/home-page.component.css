@@ -46,3 +46,35 @@
     height: fit-content;
     margin: 0 auto;
 }
+
+/* -- blog -- */
+.blog {
+    max-width: 1364px;
+    padding: 6rem 1rem 9rem 1rem;
+    margin-inline: auto;
+}
+
+.blog h2 {
+    font-weight: 700;
+    font-size: 3.25rem;
+    font-family: 'PT Serif', serif;
+
+    padding-bottom: 5rem;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* -- contato home -- */
+.home-contato-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home-contato__img {
+    background: url(../../../assets/images/home-man-notes.png);
+    background-size: cover;
+}
