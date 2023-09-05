@@ -34,3 +34,15 @@
     display: flex;
     gap: 1rem;
 }
+
+/* -- slider -- */
+.slider {
+    background-color: #FAFAFA;
+    padding: 7rem 0;
+}
+
+.slider-container {
+    max-width: 960px; 
+    height: fit-content;
+    margin: 0 auto;
+}

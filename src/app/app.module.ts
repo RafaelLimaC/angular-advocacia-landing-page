@@ -14,6 +14,7 @@ import { ContatoPageComponent } from './pages/contato-page/contato-page.componen
 import { ContatoFormComponent } from './shared/contato-form/contato-form.component';
 import { MatIconModule } from '@angular/material/icon';
 import { BotaoCtaComponent } from './shared/botao-cta/botao-cta.component';
+import { ImageSliderModule } from './shared/slider/imageSlider.module';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { BotaoCtaComponent } from './shared/botao-cta/botao-cta.component';
     BlogPageComponent,
     ContatoPageComponent,
     ContatoFormComponent,
-    BotaoCtaComponent
+    BotaoCtaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    ImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
