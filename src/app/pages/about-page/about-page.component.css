@@ -1,0 +1,85 @@
+.about-info {
+    max-width: 1364px;
+    padding: 6rem 1rem 9rem 1rem;
+    margin-inline: auto;
+}
+
+.about-info-container {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.about-img-container {
+    max-width: 500px;
+    max-height: 600px;
+}
+
+.about-img {
+    background-color: gray;
+    background: url(../../../assets/images/image-breno.png);
+    height: 100%;
+    width: 100%;
+}
+
+.about-detalhes-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+.about-detalhes-titulo {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.about-detalhes-oab {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.about-detalhes-tel {
+    padding-top: 2.25rem;
+}
+
+.about-detalhes-email {
+    padding-bottom: 2.25rem;
+}
+
+.about-content {
+    padding-bottom: 4rem;
+}
+
+.about-content-container {
+    max-width: 1364px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+    padding-bottom: 9rem;
+
+    font-size: 2.25rem;
+    font-family: 'PT Serif', serif;
+}
+
+.about-content-container p {
+    max-width: 42ch;
+    line-height: 1.2;
+    padding-left: 6rem;
+}
+
+.about-content-primeiro-container :first-child {
+    padding-bottom: 3rem;
+    font-style: italic;
+}
+
+.about-content figure {
+    text-align: right;
+    padding-bottom: 8rem;
+}
+
+.about-content figure img {
+    max-width: 1200px;
+    max-height: 600px;
+    width: 70%;
+}
