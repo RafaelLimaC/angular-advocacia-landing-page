@@ -46,8 +46,14 @@ footer {
     gap: 1rem;
 }
 
+.footer-nav__list li,
+.footer-social__list li {
+    cursor: pointer;
+}
+
 .footer-grid__vcard {
     grid-area: vcard;
+    cursor: pointer;
 }
 
 .footer-grid__creditos {

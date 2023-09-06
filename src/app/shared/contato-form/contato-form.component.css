@@ -3,9 +3,10 @@
     align-items: center;
     flex-direction: column;
 
-    width: 100%;
+    padding: 8rem 1rem;
+    width: calc(100% - 2rem);
+
     background-color: #FAFAFA;
-    padding: 8rem 0;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
