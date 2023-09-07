@@ -22,12 +22,34 @@ footer {
 }
 
 .footer-wrapper {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    gap: max(5%, 1rem); 
+    display: grid;
+    grid-template-columns: fit-content fit-content; 
+    gap: 1rem;
     grid-template-areas: 
+        "logo nav"
+        "creditos social"
+        "info vcard";
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: max(5%, 1rem); 
+        grid-template-columns: fit-content fit-content fit-content fit-content; 
+        grid-template-areas: 
         "logo nav info social"
         ". . vcard creditos";
+    }
+}
+
+@media (min-width: 901px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: max(5%, 1rem); 
+        grid-template-areas: 
+            "logo nav info social"
+            ". . vcard creditos";
+    }
 }
 
 .footer-logo {
@@ -36,6 +58,8 @@ footer {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    grid-area: logo;
 }
 
 .footer-nav__list, 
@@ -49,6 +73,18 @@ footer {
 .footer-nav__list li,
 .footer-social__list li {
     cursor: pointer;
+}
+
+.footer-grid__nav {
+    grid-area: nav;
+}
+
+.footer-grid__info {
+    grid-area: info;
+}
+
+.footer-grid__social {
+    grid-area: social;
 }
 
 .footer-grid__vcard {
@@ -71,4 +107,10 @@ footer {
 .footer-minusculo a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 400px) {
+    .footer-email {
+        display: none;
+    }
 }
