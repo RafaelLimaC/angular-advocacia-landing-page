@@ -44,8 +44,8 @@ header {
 }
 
 .activelink {
-    border-bottom: 2px solid black;
-    margin-bottom: -2px;
+    border-bottom: 0.125em solid black;
+    margin-bottom: -0.125em;
 }
 
 .underline-effect {
@@ -56,16 +56,81 @@ header {
 .underline-effect:after {
     content: '';
     width: 0px;
-    height: 2px;
+    height: 0.125em;
     display: block;
     background: #AAAAAA;
     transition: width 300ms;
 
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -0.125em;
 }
   
 .underline-effect:hover:after {
     width: 100%;
+}
+
+/*-- menu --*/
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger mat-icon {
+    font-size: 32px;
+    height: 100%;
+    width: 100%;
+}
+
+.is-open {
+    display: block;
+    position: absolute;
+    top: 242px;
+    background-color: #2F2F2F;
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .header-nav__list {
+        gap: 1rem;
+    }
+
+    .header-logo {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .header-nav__list {
+        display: none;
+    }
+
+    .burger {
+        display: inline-block;
+    }
+
+    .is-open {
+        position: absolute;
+        top: 200px;
+        right: 16px;
+        background-color: #999;
+        width: min(290px, calc(100% - 2rem));
+        border-radius: 4px;
+        height: fit-content;
+        padding: 2.5rem 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .is-open li {
+        color: white;
+        font-size: 2rem;
+    }
 }

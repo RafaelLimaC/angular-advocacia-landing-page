@@ -2,7 +2,10 @@
     <div class="header">
         <nav class="header-nav">
             <p class="header-logo" routerLink="/home">Breno Firmino</p>
-            <ul class="header-nav__list">
+            <span class="burger" (click)="toggleMenu()">
+                <mat-icon aria-hidden="true">{{ isMenuOpen ? "close" : "menu"}}</mat-icon>
+            </span>
+            <ul class="header-nav__list" [class.is-open]="isMenuOpen">
                 <li class="header-nav__item underline-effect" routerLinkActive="activelink" routerLink="/sobre">Sobre</li>
                 <li class="header-nav__item underline-effect" routerLinkActive="activelink" routerLink="/atuacao">Atuação</li>
                 <li class="header-nav__item underline-effect" routerLinkActive="activelink" routerLink="/pro-bono">Pro bono</li>
