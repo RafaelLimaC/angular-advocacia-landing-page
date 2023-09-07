@@ -1,0 +1,19 @@
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background-color: #FAFAFA;
+
+    max-width: 1364px;
+    margin-inline: auto;
+    border-radius: 20px;
+}
+
+.blog p {
+    font-size: max(5vw, 3rem);
+    color: #DDDDDD;
+}

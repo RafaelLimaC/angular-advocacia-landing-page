@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ContatoFormComponent {
   @Input() versaoEspecial: boolean = false;
+  @Input() atuacao: boolean = false;
 }

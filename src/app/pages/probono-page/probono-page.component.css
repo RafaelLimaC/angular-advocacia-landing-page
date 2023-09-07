@@ -1,0 +1,42 @@
+.pro-bono-titulo {
+    font-family: var(--ff-pt-serif);
+    font-size: 5rem;
+    font-weight: 700;
+
+    padding: 3rem 0 10rem 1rem; 
+
+    max-width: 1364px;
+    margin-inline: auto;
+}
+
+.pro-bono-content-container {
+    max-width: 1364px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+    padding-bottom: 9rem;
+
+    font-size: 2.25rem;
+    font-family: 'PT Serif', serif;
+}
+
+.pro-bono-content-container p {
+    max-width: 42ch;
+    line-height: 1.2;
+    padding-left: 6rem;
+}
+
+.pro-bono-content-primeiro-container :first-child {
+    padding-bottom: 3rem;
+    font-style: italic;
+}
+
+.pro-bono-content figure {
+    text-align: left;
+    padding-bottom: 8rem;
+}
+
+.pro-bono-content figure img {
+    max-width: 1200px;
+    max-height: 600px;
+    width: 70%;
+}
