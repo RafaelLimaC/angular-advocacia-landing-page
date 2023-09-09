@@ -14,6 +14,18 @@
     margin-inline: auto;
 }
 
+@media (max-width: 500px) {
+    .bg-home {
+        min-height: fit-content;
+        padding-bottom: 5rem;
+    }
+
+    .home-cta {
+        padding: 1rem 1rem;
+
+    }
+}
+
 .home-cta__texto {
     padding-bottom: 6rem;
     max-width: 140ch;
@@ -21,7 +33,7 @@
 
 .home-cta__texto h1 {
     font-family: 'PT Serif', serif;
-    font-size: 4rem;
+    font-size: clamp(2.5vw, 4rem, 6vw);
     letter-spacing: 0.05em;
     line-height: 1.4;
 }
@@ -41,10 +53,18 @@
     padding: 7rem 0;
 }
 
+@media (max-width: 500px) {
+    .slider {
+        background-color: #FAFAFA;
+        padding: 3rem 0;
+    }
+}
+
 .slider-container {
     max-width: 960px; 
     height: fit-content;
     margin: 0 auto;
+    padding-inline: 1rem;
 }
 
 /* -- blog -- */
@@ -70,6 +90,25 @@
     gap: 3rem;
 }
 
+@media (max-width: 600px) {
+    .blog {
+        padding: 3rem 1rem 5rem 1rem;
+    }
+    
+    .blog h2 {
+        font-size: 2.25rem;
+        padding-bottom: 3rem;
+    }
+    
+    .blog-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        gap: 3rem;
+    }
+}
+
 /* -- contato home -- */
 .home-contato-container {
     display: grid;
@@ -80,5 +119,15 @@
     background: url(../../../assets/images/home-man-notes.png);
     background-size: auto 130%;
     background-position: 50% 40%;
+}
 
+@media (max-width: 1200px) {
+    .home-contato__img {
+        display: none;
+    }
+
+    .home-contato-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
