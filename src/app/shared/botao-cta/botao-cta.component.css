@@ -37,13 +37,11 @@
     
     .btn-cta mat-icon {
         font-size: 35px;
-        height: 28px;
         transform: translateY(-15%);
     }
     
     .btn-cta:hover mat-icon {
         width: 35px;
-        padding-right: 0.5rem;
     }
 }
 
@@ -55,12 +53,10 @@
     
     .btn-cta mat-icon {
         font-size: 25px;
-        height: 28px;
         transform: translateY(5%);
     }
     
     .btn-cta:hover mat-icon {
         width: 25px;
-        padding-right: 0.5rem;
     }
 }

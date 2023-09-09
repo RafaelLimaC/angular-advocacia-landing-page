@@ -47,6 +47,12 @@
     gap: 1rem;
 }
 
+@media (max-width: 500px) {
+    .home-cta__botoes {
+        flex-direction: column;
+    }
+}
+
 /* -- slider -- */
 .slider {
     background-color: #FAFAFA;
