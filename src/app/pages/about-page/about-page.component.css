@@ -20,6 +20,7 @@
     background: url(../../../assets/images/image-breno.png);
     height: 100%;
     width: 100%;
+    min-width: 250px;
 }
 
 .about-detalhes-container {
@@ -82,4 +83,48 @@
     max-width: 1200px;
     max-height: 600px;
     width: 70%;
+}
+
+@media (max-width: 900px) {
+    .about-detalhes-titulo {
+        font-size: 2.5rem;
+    }
+
+    .about-detalhes-container :not(h2) {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-info-container {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .about-img {
+        max-width: 400px;
+    }
+
+    .about-content-container {
+        padding-bottom: 5rem;   
+        font-size: 1.5rem;
+    }
+    
+    .about-content-container p {
+        padding-left: 0;
+    }
+
+    .about-content figure {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-detalhes-email {
+        display: none;
+    }
+
+    .about-detalhes-tel {
+        padding-bottom: 2rem;
+    }
 }
